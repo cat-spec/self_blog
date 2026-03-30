@@ -1,0 +1,31 @@
+:root {
+  --text: #93a2b6;
+  --text-h: #e6edf3;
+  --bg: #0d1117;
+  --border: #2d2d3a;
+  --code-bg: rgba(31, 32, 40, 0.6);
+
+  /* Neon green (主色调) */
+  --accent: #00ff99;
+  --accent-bg: rgba(0, 255, 153, 0.1);
+  --accent-border: rgba(0, 255, 153, 0.5);
+  --link: #3b82f6;
+
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* 覆盖 Vite 模板里的居中布局，改成仪表盘全宽 */
+#app {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: left;
+  border: 0;
+}
+
