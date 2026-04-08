@@ -1,0 +1,9 @@
+// github路由
+const express = require('express')
+const router = express.Router()
+
+router.get('/github', (req, res) => {
+  res.send('github')
+})
+
+module.exports = router
