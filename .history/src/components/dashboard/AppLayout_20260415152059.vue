@@ -55,7 +55,7 @@
           <nav class="space-y-2">
             <SidebarItem to="/" icon="📊" label="仪表盘" />
             <SidebarItem to="/garden" icon="🌿" label="知识花园" />
-            <SidebarItem to="/selfskill" icon="🛠️" label="个人技能" />
+            <SidebarItem to="/skills" icon="🛠️" label="个人技能" />
             <SidebarItem to="/timeline" icon="🧭" label="个人经历" :disabled="true" />
           </nav>
         </div>

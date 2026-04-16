@@ -43,8 +43,10 @@
           <StatLine label="阅读量" :value="p.stats.reads" />
         </div>
          <div v-if="p.name=='leetcode'" class="grid grid-cols-2 gap-x-4 gap-y-3"> 
-          <StatLine label="解题/总题" :value="p.stats.articles" />
-          <StatLine label="通过率" :value="p.stats.fans" />
+          <StatLine label="刷题数" :value="p.stats.articles" />
+          <StatLine label="粉丝数" :value="p.stats.fans" />
+          <StatLine label="点赞数" :value="p.stats.likes" />
+          <StatLine label="阅读量" :value="p.stats.reads" />
         </div>
       </div>
     </div>

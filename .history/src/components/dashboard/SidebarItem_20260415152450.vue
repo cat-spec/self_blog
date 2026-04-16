@@ -30,8 +30,6 @@ const props = defineProps({
   disabled: { type: Boolean, default: false },
 })
 
-console.log(props.disabled)
-
 const route = useRoute()
 const active = computed(() => !props.disabled && route.path === props.to)
 </script>
