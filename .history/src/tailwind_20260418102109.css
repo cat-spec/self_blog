@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 你的其他样式（上传栏、目录等）保持不变 ... */
+
+/* ========== 针对 Tailwind CSS 的 Markdown 样式修复 ========== */
+/* 使用更高的特异性，并添加 !important 确保覆盖 Tailwind Preflight */
+.markdown-body {
+  flex: 1;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow-x: auto;
+  line-height: 1.6;
+  color: #1f2d3d;
+}
+
+/* 标题样式 - 使用 !important 覆盖 Tailwind 重置 */
+.markdown-body h1 {
+  font-size: 2em !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #eaecef !important;
+  padding-bottom: 0.3em !important;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em !important;
+  color: #111 !important;
+}
+.markdown-body h2 {
+  font-size: 1.5em !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #eaecef !important;
+  padding-bottom: 0.3em !important;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em !important;
+  color: #111 !important;
+}
+.markdown-body h3 {
+  font-size: 1.25em !important;
+  font-weight: 600 !important;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em !important;
+  color: #111 !important;
+}
+.markdown-body h4 {
+  font-size: 1em !important;
+  font-weight: 600 !important;
+  margin-top: 1em !important;
+  color: #111 !important;
+}
+.markdown-body h5,
+.markdown-body h6 {
+  font-size: 0.875em !important;
+  font-weight: 600 !important;
+  margin-top: 1em !important;
+  color: #111 !important;
+}
+
+/* 其他元素同理，根据需要添加 !important */
+.markdown-body p {
+  margin: 0.8em 0 !important;
+}
+.markdown-body ul, .markdown-body ol {
+  padding-left: 2em !important;
+  margin: 0.8em 0 !important;
+}
+.markdown-body blockquote {
+  margin: 0.8em 0 !important;
+  padding: 0 1em !important;
+  color: #6a737d !important;
+  border-left: 0.25em solid #dfe2e5 !important;
+}
+.markdown-body code {
+  background: #000000 !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 6px !important;
+  font-family: 'SF Mono', 'Menlo', monospace !important;
+  font-size: 85% !important;
+}
+.markdown-body pre {
+  background: #282c34 !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+  overflow-x: auto !important;
+}
+.markdown-body pre code {
+  background: transparent !important;
+  padding: 0 !important;
+  color: #abb2bf !important;
+}
+.markdown-body table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 1em 0 !important;
+}
+.markdown-body th, .markdown-body td {
+  border: 1px solid #dfe2e5 !important;
+  padding: 8px 12px !important;
+}
+.markdown-body th {
+  background: #f6f8fa !important;
+  font-weight: 600 !important;
+}
+.markdown-body img {
+  max-width: 100% !important;
+  border-radius: 8px !important;
+}
